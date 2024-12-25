@@ -15,8 +15,27 @@ body{
     width: 40%;
 }
 
+.contenedor {
+	height: 100%;
+}
+
 .cabecera {
     background-color: rgb(223, 205, 189);
+	display:flex;
+}
+
+.principal {
+	height:500px;
+}
+
+.usuario{
+	margin:auto;
+	font-size:150%;
+}
+
+.principalF {
+	border:0;
+	border-radius:4px;
 }
 
 #menu {
