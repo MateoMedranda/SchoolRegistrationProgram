@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Registro Académico</title>
         <link rel="stylesheet" href="../css/estilos1.css">
+        <link rel="stylesheet" href="../css/estilos2.css">
     </head>
 
     <body>
@@ -43,8 +44,136 @@
                   </nav>
             </div>
             <br>
-            <div class="principal">
+            <div class="principalAlumno">
+              <div class="titulo"><h2>Agregar Alumno</h2></div>
               
+              <div class="agregar">
+                <fieldset class="formA">
+                <form id="Ialumno" name="Ialumno" method="post" action="">
+                  <p>
+                    <label for="nombreA"><b>Nombre Alumno:</b><br>           
+                      <input class="alumno" name="nombreA" id="nombreA" type="text" placeholder="Ingrese el Nombre del Alumno">
+                    </label>
+                  </p>
+                  
+                  <p>
+                  <label for="apellidoA"><b>Apellido Alumno:</b><br>           
+                    <input class="alumno" name="apellidoA" id="apellidoA" type="text" placeholder="Ingrese el Apellido del Alumno">
+                  </label>
+                  </p>
+
+                  <p>
+                    <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b><br>          
+                      <input class="fecha" name="fechaNacimiento" id="fechaNacimiento" type="date">
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="curso"><b>Año de Inscripción:</b><br>           
+                      <select class="curso" name="curso" id="curso">
+                        <option>Seleccione una opción</option>
+                        <option>Séptimo de básica</option>
+                        <option>Octavo de básica</option>
+                        <option>Noveno de básica</option>
+                        <option>Décimo de básica</option>
+                        <option>Primero bachillerato</option>
+                        <option>Segundo bachillerato</option>
+                        <option>Tercero bachillerato</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Nombre Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ingrese el Nombre del Tutor">
+                    </label>
+                  </p>
+                  <p>
+                    <label for="nombreTutor"><b>Apellido Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ingrese el Nombre del Tutor">
+                    </label>
+                  </p>
+                  <p>
+                    <label for="nombreTutor"><b>Número Teléfono Representante:</b><br>          
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: 0980181870">
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Email Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com">
+                    </label>
+                  </p>
+                </form> 
+                </fieldset>
+                <iframe class="frameAgregar" src="../php/imprimirAlumno" width="50%" height="300vh"></iframe>
+
+              </div>
+              <div class="titulo"><h2>Agregar Calificación</h2></div>
+              <div class="calificacion">
+                <fieldset class="formA">
+                <form id="Ialumno" name="Ialumno" method="post" action="">
+                  <p>
+                    <label for="nombreA"><b>Nombre Alumno:</b><br>           
+                      <input class="alumno" name="nombreA" id="nombreA" type="text" placeholder="Ingrese el Nombre del Alumno">
+                    </label>
+                  </p>
+                  
+                  <p>
+                  <label for="apellidoA"><b>Apellido Alumno:</b><br>           
+                    <input class="alumno" name="apellidoA" id="apellidoA" type="text" placeholder="Ingrese el Apellido del Alumno">
+                  </label>
+                  </p>
+
+                  <p>
+                    <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b><br>          
+                      <input class="fecha" name="fechaNacimiento" id="fechaNacimiento" type="date">
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="curso"><b>Año de Inscripción:</b><br>           
+                      <select class="curso" name="curso" id="curso">
+                        <option>Seleccione una opción</option>
+                        <option>Séptimo de básica</option>
+                        <option>Octavo de básica</option>
+                        <option>Noveno de básica</option>
+                        <option>Décimo de básica</option>
+                        <option>Primero bachillerato</option>
+                        <option>Segundo bachillerato</option>
+                        <option>Tercero bachillerato</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Nombre Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ingrese el Nombre del Tutor">
+                    </label>
+                  </p>
+                  <p>
+                    <label for="nombreTutor"><b>Apellido Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ingrese el Nombre del Tutor">
+                    </label>
+                  </p>
+                  <p>
+                    <label for="nombreTutor"><b>Número Teléfono Representante:</b><br>          
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: 0980181870">
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Email Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com">
+                    </label>
+                  </p>
+                </form> 
+                </fieldset>
+                <iframe class="frameAgregar" src="../php/imprimirAlumno" width="50%" height="300vh"></iframe>
+
+              </div>
+              <div class="titulo"><h2>Modificar Alumno</h2></div>
+
             </div>
 
             <br>

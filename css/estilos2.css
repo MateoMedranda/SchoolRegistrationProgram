@@ -15,3 +15,47 @@
 	background-color: rgba(207, 124, 124,70%);
     display: flex;
 }
+
+.principalAlumno{
+    margin:auto;
+    width: 90%;
+    height:470vh;
+    background-color: rgba(203, 155, 125, 0.9);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.agregar{
+    width:90%;
+    margin:0 auto;
+    font-size: 1.20vw;
+    display: flex;
+}
+
+.frameAgregar {
+    margin:auto;
+    border:0;
+}
+
+.formA {
+    width: 50%;
+    border-radius: 4px;
+}
+
+.alumno, .fecha, .curso{
+    width: 50%;
+    height: 4vh;
+    border-radius: 3px;
+    border:0;
+}
+
+.titulo {
+    background-color: rgba(108, 40, 40, 0.826);
+    color:rgb(206, 255, 232);
+}
+
+h2 {
+    text-align: center;
+}
+
+
