@@ -71,13 +71,18 @@ body{
 
 .redes{
 	margin:auto;
-	width: 30%;
+	width: 20%;
 	padding: 0.1vw 0.5vw;
 }
 
 .redesI{
 	width: 9%;
 	margin:0.3vh 1vw;
+}
+
+.horarios{
+	width:20%;
+	margin:auto;
 }
 
 .mapa{
