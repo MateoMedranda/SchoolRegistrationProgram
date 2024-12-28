@@ -19,13 +19,13 @@
 .principalAlumno{
     margin:auto;
     width: 90%;
-    height:240vh;
+    height:220vh;
     background-color: rgba(203, 155, 125, 0.9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(0, 0, 0, 0.8);
 }
 
-.agregar, .calificacion{
+.agregar, .calificacion,.modificar{
     width:90%;
     margin:0 auto;
     font-size: 1vw;
@@ -34,7 +34,10 @@
 
 .frameAgregar {
     margin:auto;
+    background-color: antiquewhite;
     border:0;
+    font-size: 1vw;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 .formA {
@@ -52,6 +55,7 @@
 .titulo {
     background-color: rgba(108, 40, 40, 0.826);
     color:rgb(206, 255, 232);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 h2 {

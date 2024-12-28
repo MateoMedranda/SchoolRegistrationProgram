@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro Académico</title>
+        <link rel="stylesheet" href="../css/estilos1.css">
+        <link rel="stylesheet" href="../css/estilos2.css">
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <div class="cabecera">
+                <img class="logo" src="../imagenes/logo.png">
+                <div class="usuario">
+                  <p>
+                    Usuario: Mateo Medranda
+                    <br>
+                    Fecha: 2024/12/29
+                  </p>
+                </div>
+            </div>
+            <br>
+            <div class="navegacion">
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                    <ul>
+                      <li><a href='../index.html'>Inicio</a></li>
+                      <li><a class='dropdown-arrow' href='http://'>Estudiantes</a>
+                        <ul class='sub-menus'>
+                          <li><a href='#agregarAlumno'>Agregar Alumno</a></li>
+                          <li><a href='#agregarCalificacion'>Agregar Calificación</a></li>
+                          <li><a href='#modificarAlumno'>Modificar Alumno</a></li>
+                        </ul>
+                      </li>
+                      <li><a class='dropdown-arrow' href='http://'>Materias</a>
+                        <ul class='sub-menus'>
+                          <li><a href='http://'>Agregar Materia</a></li>
+                          <li><a href='http://'>Modificar Materia</a></li>
+                        </ul>
+                      </li>
+                      <li><a href='informacion.html'>Información</a></li>
+                      <li><a href='contactos.html'>Contáctanos</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <br>
+            <div class="principalAlumno">
+              <div id="agregarAlumno" class="titulo"><h2>Agregar Alumno</h2></div>
+              
+              <div class="agregar">
+                <fieldset class="formA">
+                  <legend><b>Ingreso Información del Alumno</b></legend>
+                <form id="Ialumno" name="Ialumno" method="post" action="../php/imprimirAlumno.php">
+                  <p>
+                    <label for="nombreA"><b>Nombre Alumno:</b><br>           
+                      <input class="alumno" name="nombreA" id="nombreA" type="text" placeholder="Ingrese el Nombre del Alumno" required>
+                    </label>
+                  </p>
+                  
+                  <p>
+                  <label for="apellidoA"><b>Apellido Alumno:</b><br>           
+                    <input class="alumno" name="apellidoA" id="apellidoA" type="text" placeholder="Ingrese el Apellido del Alumno" required>
+                  </label>
+                  </p>
+
+                  <p>
+                    <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b><br>          
+                      <input class="fecha" name="fechaNacimiento" id="fechaNacimiento" type="date" required>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="curso"><b>Año de Inscripción:</b><br>           
+                      <select class="curso" name="curso" id="curso" required>
+                        <option>Seleccione una opción</option>
+                        <option>Séptimo de básica</option>
+                        <option>Octavo de básica</option>
+                        <option>Noveno de básica</option>
+                        <option>Décimo de básica</option>
+                        <option>Primero bachillerato</option>
+                        <option>Segundo bachillerato</option>
+                        <option>Tercero bachillerato</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreR"><b>Nombre Representante:</b><br>           
+                      <input class="alumno" name="nombreR" id="nombreR" type="text" placeholder="Ingrese el Nombre del Tutor" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label for="apellidoR"><b>Apellido Representante:</b><br>           
+                      <input class="alumno" name="apellidoR" id="apellidoR" type="text" placeholder="Ingrese el Apellido del Tutor" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label for="Telefono"><b>Número Teléfono Representante:</b><br>          
+                      <input class="alumno" name="Telefono" id="Telefono" type="text" placeholder="Ex: 0980181870" required>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Email Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com" required>
+                    </label>
+                  </p>
+
+                  <input type="submit" value="Registrar Alumno">
+                  <input type="reset" value="Resetear formulario">
+                </form> 
+                </fieldset>
+                <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
+
+              </div>
+              <div class="titulo" id="agregarCalificacion"><h2>Agregar Calificación</h2></div>
+              <div class="calificacion">
+                <fieldset class="formA">
+                  <legend><b>Ingreso de Calificación</b></legend>
+                <form id="Icalificacion" name="Icalificacion" method="post" action="">
+                  <p>
+                    <label for="curso"><b>Alumno Inscrito:</b><br>           
+                      <select class="curso" name="curso" id="curso" required>
+                        <option>Seleccione un Alumno</option>
+                        <option>Mateo Medranda</option>
+                        <option>Roberto Rojeron</option>
+                        <option>Alejandro Navas</option>
+                        <option>Diana López</option>
+                        <option>Felicia Rodriguez</option>
+                        <option>Roberto Álvarez</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="curso"><b>Año Inscrito:</b><br>           
+                      <select class="curso" name="curso" id="curso" required>
+                        <option>Seleccione una opción</option>
+                        <option>Séptimo de básica</option>
+                        <option>Octavo de básica</option>
+                        <option>Noveno de básica</option>
+                        <option>Décimo de básica</option>
+                        <option>Primero bachillerato</option>
+                        <option>Segundo bachillerato</option>
+                        <option>Tercero bachillerato</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="materias"><b>Materia:</b><br>           
+                      <select class="materias" name="materias" id="materias" required>
+                        <option>Seleccione una Materia</option>
+                        <option>Química</option>
+                        <option>Matemática</option>
+                        <option>Biología</option>
+                        <option>Lengua y Literatura</option>
+                        <option>Redacción Creativa</option>
+                        <option>Educación Física</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nota"><b>Nota:</b><br>          
+                      <input class="nota" name="nota" id="nota" type="number" min="0" max="10" required>
+                    </label>
+                  </p>
+                  
+                  <input type="submit" value="Registrar Nota">
+                  <input type="reset" value="Resetear formulario">
+                </form> 
+                </fieldset>
+                <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
+
+              </div>
+              <div class="titulo" id="modificarAlumno"><h2>Modificar Alumno</h2></div>
+
+              <div class="modificar">
+                <fieldset class="formA">
+                  <legend><b>Modificar Información del Alumno</b></legend>
+                <form id="Ialumno" name="Ialumno" method="post" action="">
+
+                  <p>
+                    <label for="curso"><b>Alumno Inscrito:</b><br>           
+                      <select class="curso" name="curso" id="curso" required>
+                        <option>Seleccione un Alumno</option>
+                        <option>Mateo Medranda</option>
+                        <option>Roberto Rojeron</option>
+                        <option>Alejandro Navas</option>
+                        <option>Diana López</option>
+                        <option>Felicia Rodriguez</option>
+                        <option>Roberto Álvarez</option>
+                      </select>
+                    </label>
+                  </p>                  
+                  
+                  <p>
+                    <label for="curso"><b>Año de Inscripción:</b><br>           
+                      <select class="curso" name="curso" id="curso" required>
+                        <option>Seleccione una opción</option>
+                        <option>Séptimo de básica</option>
+                        <option>Octavo de básica</option>
+                        <option>Noveno de básica</option>
+                        <option>Décimo de básica</option>
+                        <option>Primero bachillerato</option>
+                        <option>Segundo bachillerato</option>
+                        <option>Tercero bachillerato</option>
+                      </select>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreR"><b>Nombre Representante:</b><br>           
+                      <input class="alumno" name="nombreR" id="nombreR" type="text" placeholder="Ingrese el Nombre del Tutor" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label for="apellidoR"><b>Apellido Representante:</b><br>           
+                      <input class="alumno" name="apellidoR" id="apellidoR" type="text" placeholder="Ingrese el Apellido del Tutor" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label for="Telefono"><b>Número Teléfono Representante:</b><br>          
+                      <input class="alumno" name="Telefono" id="Telefono" type="text" placeholder="Ex: 0980181870" required>
+                    </label>
+                  </p>
+
+                  <p>
+                    <label for="nombreTutor"><b>Email Representante:</b><br>           
+                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com" required>
+                    </label>
+                  </p>
+
+                  <input type="submit" value="Actualizar Alumno">
+                  <input type="reset" value="Resetear formulario">
+                </form> 
+                </fieldset>
+                <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
+
+              </div>
+
+            </div>
+
+            <br>
+
+            <div class="piePagina">
+              <div class="redes">
+                <h2>Siguenos en Nuestras redes</h2>
+                <img class="redesI" src="../imagenes/linkedin.png">
+                <img class="redesI" src="../imagenes/instagram.png">
+                <img class="redesI" src="../imagenes/whatsapp.png">
+                <br>
+                <p>Nos ubicamos en:</p>
+                <p>Av. Manuel Cordova Galarza</p>
+                <p>Cerca del monumento Mitad del mundo</p>
+              </div>
+              <div class="horarios">
+                <h2>Horario de atención:</h2>
+                <p>Lunes a viernes: 8:00 AM - 6:00 PM</p>
+                <p>Sábados: 9:00 AM - 1:00 PM</p>
+                <p>"Transformando vidas a través de la educación y la innovación."</p>
+              </div>
+              <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255347.02338042797!2d-78.59534765454848!3d-0.1862502273162607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002427c9f%3A0x44b991e158ef5572!2sQuito!5e0!3m2!1ses-419!2sec!4v1735320015394!5m2!1ses-419!2sec" width="30%" height="240vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="30%" height="200vh" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+       
+
+    </body>
+</html>
