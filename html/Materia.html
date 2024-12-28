@@ -35,7 +35,6 @@
                       <li><a class='dropdown-arrow' href='http://'>Materias</a>
                         <ul class='sub-menus'>
                           <li><a href='http://'>Agregar Materia</a></li>
-                          <li><a href='http://'>Modificar Materia</a></li>
                         </ul>
                       </li>
                       <li><a href='informacion.html'>Información</a></li>
@@ -44,31 +43,19 @@
                   </nav>
             </div>
             <br>
-            <div class="principalAlumno">
-              <div id="agregarAlumno" class="titulo"><h2>Agregar Alumno</h2></div>
+            <div class="principalMateria">
+              <div id="agregarMateria" class="titulo"><h2>Agregar Materia</h2></div>
               
               <div class="agregar">
                 <fieldset class="formA">
-                  <legend><b>Ingreso Información del Alumno</b></legend>
+                  <legend><b>Ingreso Información de la materia</b></legend>
                 <form id="Ialumno" name="Ialumno" method="post" action="../php/imprimirAlumno.php">
                   <p>
-                    <label for="nombreA"><b>Nombre Alumno:</b><br>           
-                      <input class="alumno" name="nombreA" id="nombreA" type="text" placeholder="Ingrese el Nombre del Alumno" required>
+                    <label for="nombreM"><b>Nombre Materia:</b><br>           
+                      <input class="alumno" name="nombreM" id="nombreM" type="text" placeholder="Ingrese el Nombre de la materia" required>
                     </label>
                   </p>
                   
-                  <p>
-                  <label for="apellidoA"><b>Apellido Alumno:</b><br>           
-                    <input class="alumno" name="apellidoA" id="apellidoA" type="text" placeholder="Ingrese el Apellido del Alumno" required>
-                  </label>
-                  </p>
-
-                  <p>
-                    <label for="fechaNacimiento"><b>Fecha de Nacimiento:</b><br>          
-                      <input class="fecha" name="fechaNacimiento" id="fechaNacimiento" type="date" required>
-                    </label>
-                  </p>
-
                   <p>
                     <label for="curso"><b>Año de Inscripción:</b><br>           
                       <select class="curso" name="curso" id="curso" required>
@@ -81,28 +68,6 @@
                         <option>Segundo bachillerato</option>
                         <option>Tercero bachillerato</option>
                       </select>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="nombreR"><b>Nombre Representante:</b><br>           
-                      <input class="alumno" name="nombreR" id="nombreR" type="text" placeholder="Ingrese el Nombre del Tutor" required>
-                    </label>
-                  </p>
-                  <p>
-                    <label for="apellidoR"><b>Apellido Representante:</b><br>           
-                      <input class="alumno" name="apellidoR" id="apellidoR" type="text" placeholder="Ingrese el Apellido del Tutor" required>
-                    </label>
-                  </p>
-                  <p>
-                    <label for="Telefono"><b>Número Teléfono Representante:</b><br>          
-                      <input class="alumno" name="Telefono" id="Telefono" type="text" placeholder="Ex: 0980181870" required>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="nombreTutor"><b>Email Representante:</b><br>           
-                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com" required>
                     </label>
                   </p>
 
@@ -113,134 +78,8 @@
                 <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
 
               </div>
-              <div class="titulo" id="agregarCalificacion"><h2>Agregar Calificación</h2></div>
-              <div class="calificacion">
-                <fieldset class="formA">
-                  <legend><b>Ingreso de Calificación</b></legend>
-                <form id="Icalificacion" name="Icalificacion" method="post" action="">
-                  <p>
-                    <label for="curso"><b>Alumno Inscrito:</b><br>           
-                      <select class="curso" name="curso" id="curso" required>
-                        <option>Seleccione un Alumno</option>
-                        <option>Mateo Medranda</option>
-                        <option>Roberto Rojeron</option>
-                        <option>Alejandro Navas</option>
-                        <option>Diana López</option>
-                        <option>Felicia Rodriguez</option>
-                        <option>Roberto Álvarez</option>
-                      </select>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="curso"><b>Año Inscrito:</b><br>           
-                      <select class="curso" name="curso" id="curso" required>
-                        <option>Seleccione una opción</option>
-                        <option>Séptimo de básica</option>
-                        <option>Octavo de básica</option>
-                        <option>Noveno de básica</option>
-                        <option>Décimo de básica</option>
-                        <option>Primero bachillerato</option>
-                        <option>Segundo bachillerato</option>
-                        <option>Tercero bachillerato</option>
-                      </select>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="materias"><b>Materia:</b><br>           
-                      <select class="materias" name="materias" id="materias" required>
-                        <option>Seleccione una Materia</option>
-                        <option>Química</option>
-                        <option>Matemática</option>
-                        <option>Biología</option>
-                        <option>Lengua y Literatura</option>
-                        <option>Redacción Creativa</option>
-                        <option>Educación Física</option>
-                      </select>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="nota"><b>Nota:</b><br>          
-                      <input class="nota" name="nota" id="nota" type="number" min="0" max="10" required>
-                    </label>
-                  </p>
-                  
-                  <input type="submit" value="Registrar Nota">
-                  <input type="reset" value="Resetear formulario">
-                </form> 
-                </fieldset>
-                <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
-
+              
               </div>
-              <div class="titulo" id="modificarAlumno"><h2>Modificar Alumno</h2></div>
-
-              <div class="modificar">
-                <fieldset class="formA">
-                  <legend><b>Modificar Información del Alumno</b></legend>
-                <form id="Ialumno" name="Ialumno" method="post" action="">
-
-                  <p>
-                    <label for="curso"><b>Alumno Inscrito:</b><br>           
-                      <select class="curso" name="curso" id="curso" required>
-                        <option>Seleccione un Alumno</option>
-                        <option>Mateo Medranda</option>
-                        <option>Roberto Rojeron</option>
-                        <option>Alejandro Navas</option>
-                        <option>Diana López</option>
-                        <option>Felicia Rodriguez</option>
-                        <option>Roberto Álvarez</option>
-                      </select>
-                    </label>
-                  </p>                  
-                  
-                  <p>
-                    <label for="curso"><b>Año de Inscripción:</b><br>           
-                      <select class="curso" name="curso" id="curso" required>
-                        <option>Seleccione una opción</option>
-                        <option>Séptimo de básica</option>
-                        <option>Octavo de básica</option>
-                        <option>Noveno de básica</option>
-                        <option>Décimo de básica</option>
-                        <option>Primero bachillerato</option>
-                        <option>Segundo bachillerato</option>
-                        <option>Tercero bachillerato</option>
-                      </select>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="nombreR"><b>Nombre Representante:</b><br>           
-                      <input class="alumno" name="nombreR" id="nombreR" type="text" placeholder="Ingrese el Nombre del Tutor" required>
-                    </label>
-                  </p>
-                  <p>
-                    <label for="apellidoR"><b>Apellido Representante:</b><br>           
-                      <input class="alumno" name="apellidoR" id="apellidoR" type="text" placeholder="Ingrese el Apellido del Tutor" required>
-                    </label>
-                  </p>
-                  <p>
-                    <label for="Telefono"><b>Número Teléfono Representante:</b><br>          
-                      <input class="alumno" name="Telefono" id="Telefono" type="text" placeholder="Ex: 0980181870" required>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label for="nombreTutor"><b>Email Representante:</b><br>           
-                      <input class="alumno" name="nombreTutor" id="nombreTutor" type="text" placeholder="Ex: MateJoel@gmail.com" required>
-                    </label>
-                  </p>
-
-                  <input type="submit" value="Actualizar Alumno">
-                  <input type="reset" value="Resetear formulario">
-                </form> 
-                </fieldset>
-                <iframe class="frameAgregar" src="../php/imprimirAlumno.php" width="50%" height="300vh"></iframe>
-
-              </div>
-
-            </div>
 
             <br>
 
